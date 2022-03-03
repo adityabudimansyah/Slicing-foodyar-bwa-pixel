@@ -229,6 +229,7 @@ img {
   margin: -10px 0 10px;
 }
 
+/* testimonial */
 .testi {
   padding: 120px 0 110px;
 }
@@ -292,6 +293,7 @@ img {
   cursor: pointer;
 }
 
+/* footer */
 .footer col-6 {
   text-align: left;
 }
@@ -330,6 +332,9 @@ img {
   }
   .navbar::before {
     transform: translateY(0);
+  }
+  .navbar .container {
+    padding: 0 5px;
   }
   .nav-item .nav-link::before {
     bottom: 0;
