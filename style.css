@@ -7,11 +7,13 @@
   scroll-behavior: smooth;
   box-sizing: border-box;
 }
+html,
 body {
   overflow-x: hidden;
   position: relative;
   outline: none;
   line-height: 1.5;
+  max-width: 100%;
 }
 img {
   max-width: 100%;
@@ -452,6 +454,6 @@ img {
   }
   .copyright {
     padding: 15px 0;
-    font-size: 13px;
+    font-size: 11px;
   }
 }
