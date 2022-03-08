@@ -325,7 +325,7 @@ img {
 @media (max-width: 991px) {
   .navbar-hidden {
     transform: translateY(-100%);
-    transition: 0.3s;
+    transition: 0.1s;
   }
   .navbar-toggler {
     height: 34px;
@@ -368,9 +368,6 @@ img {
   }
   .jumbotron .left {
     margin-bottom: 50px;
-  }
-  .lead {
-    font-size: 20px;
   }
   .menu-section .menu-tab-content .satu {
     font-size: 18px;
