@@ -37,6 +37,13 @@ img {
 .btn-video i {
   font-size: 30px;
 }
+.img-box {
+  position: relative;
+  cursor: pointer;
+}
+.img-box .btn-video:hover {
+  background-color: black;
+}
 
 /* navbar */
 .navbar {
@@ -87,8 +94,7 @@ img {
   transform: scale(0);
 }
 .nav-item .nav-link.active::before,
-.nav-item .nav-link:hover::before,
-.nav-item .nav-link {
+.nav-item .nav-link:hover::before {
   transform: scale(1);
   color: #272042;
 }
@@ -110,6 +116,7 @@ img {
   text-align: left;
   min-height: 100vh;
   padding: 150px 0;
+  text-align: left;
 }
 .display-4 {
   font-size: 55px;
@@ -134,13 +141,6 @@ img {
   background-color: #fbe0dc;
   height: 8px;
   border-radius: 100px;
-}
-.img-box {
-  position: relative;
-  cursor: pointer;
-}
-.img-box .btn-video:hover {
-  background-color: black;
 }
 .lead {
   font-size: 25px;
@@ -290,6 +290,7 @@ img {
 /* downloads Download */
 .downloads {
   padding: 120px 0 110px;
+  text-align: left;
 }
 .stories .right img {
   cursor: pointer;
@@ -322,6 +323,10 @@ img {
 }
 
 @media (max-width: 991px) {
+  .navbar-hidden {
+    transform: translateY(-100%);
+    transition: 0.3s;
+  }
   .navbar-toggler {
     height: 34px;
     width: 44px;
@@ -387,11 +392,17 @@ img {
   }
 }
 @media (max-width: 767px) {
-  .display-4 {
-    font-size: 45px;
+  .jumbotron,
+  .downloads {
+    text-align: center;
   }
   .lead {
-    font-size: 17px;
+    font-size: 22px;
+  }
+  .menu-section,
+  .testi,
+  .downloads {
+    padding: 90px 0 110px;
   }
   .testi .text-testi .text-quote {
     font-size: 30px;

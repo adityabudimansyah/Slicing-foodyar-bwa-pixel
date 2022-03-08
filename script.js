@@ -1,9 +1,11 @@
 window.addEventListener('load', function () {
   // Animate on Scroll
-  AOS.init();
+  AOS.init({
+    once: true,
+  });
 });
 
-// sticky header
+//sticky header
 window.addEventListener('scroll', function () {
   if (this.pageYOffset > 60) {
     document.querySelector('.navbar').classList.add('sticky');
@@ -37,3 +39,18 @@ menuTabs.addEventListener('click', function (e) {
     menuSection.querySelector(target).classList.add('active');
   }
 });
+
+// hide navbar on scroll down, show navbar in scroll up
+{
+  const nav = document.querySelector('.navbar');
+  let lastScrollY = window.scrollY;
+
+  window.addEventListener('scroll', () => {
+    if (lastScrollY < window.scrollY) {
+      nav.classList.add('navbar-hidden');
+    } else {
+      nav.classList.remove('navbar-hidden');
+    }
+    lastScrollY = window.scrollY;
+  });
+}
